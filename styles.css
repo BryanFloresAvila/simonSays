@@ -1,0 +1,114 @@
+:root {
+  --firstColor: #f79d84;
+  /* --firstColor:#f2643c; */
+  
+  --secondColor: #3fa7d6;
+  --thirdColor: #fac05e;
+  --fourthColor: #ee6352;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffff;
+}
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+  font-size: 3rem;
+}
+
+h1 {
+  /* align-self: flex-end; */
+  text-align: center;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.datos{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 0 10px;
+  height: 100px;
+  width:400px;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.33);
+  border-radius: 10px;
+  font-size: 2rem;
+  font-family: 'Sriracha', cursive;
+}
+.datos p {
+  margin-left:10px;
+
+}
+
+.gameboard {
+  height: 400px;
+  width: 400px;
+
+  border-radius: 100%;
+  /* border: 1px solid blue; */
+  position: relative;
+  overflow: hidden;
+}
+.item {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  /* border: 1px solid red; */
+  /* border-radius: 100%; */
+}
+.color1 {
+  background-color: var(--firstColor);
+  left: 0px;
+}
+.color2 {
+  background-color: var(--secondColor);
+  right: 0px;
+}
+.color3 {
+  background-color: var(--thirdColor);
+  bottom: 0px;
+}
+.color4 {
+  background-color: var(--fourthColor);
+  bottom: 0px;
+  right: 0px;
+}
+
+.seleccionado {
+  background-color:black;
+; 
+
+}
+.seleccionado0 {
+  background-color:#f2643c;
+
+}
+.seleccionado1 {
+  background-color:#3fa7d6;
+ /*  opacity: 0.1; */
+}
+.seleccionado2 {
+  background-color:#fac05e;
+  /* opacity: 0.1; */
+}
+.seleccionado3 {
+  background-color:#de2c16;
+  opacity: 0.1;
+}

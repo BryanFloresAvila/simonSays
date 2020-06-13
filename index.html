@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pupup.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">GAME OF SIMON SAYS</h1>
+    </header>
+    <div class="container">
+      <div class="datos" id="Datos">
+        <p class="datos__name">
+          <span>Name: </span>
+          <span id="nameDom"></span>
+        </p>
+        <p class="datos__nivel">
+          <span>Nivel: </span>
+          <span id="nivelDom"></span>
+        </p>
+      </div>
+      <div class="gameboard" id="gameboard">
+        <div class="item color1" id="item1"></div>
+        <div class="item color2" id="item2"></div>
+        <div class="item color3" id="item3"></div>
+        <div class="item color4" id="item4"></div>
+      </div>
+    </div>
+    <a class="onPopup" id="onPopup" href="#"></a>
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Enter your name</h2>
+        <input type="text" class="name" id="name" placeholder="name" />
+        <div class="close" href="#" tarjet="#" id="init">
+          <a id="closePopup" href="#">OK</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
